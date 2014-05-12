@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>commands</key>
+	<array>
+		<dict>
+			<key>command</key>
+			<string>shiftLeft:</string>
+		</dict>
+	</array>
+	<key>keyEquivalent</key>
+	<string>$	</string>
+	<key>name</key>
+	<string>Un-Indent</string>
+	<key>scope</key>
+	<string>text.html.markdown</string>
+	<key>uuid</key>
+	<string>D77FDE57-9A5F-4062-9BFA-7591731212B0</string>
+</dict>
+</plist>
