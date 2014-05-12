@@ -9,7 +9,7 @@
 	<key>command</key>
 	<string>#!/usr/bin/env python
 
-mport sys
+import sys
 import os
 
 old_line=os.environ['TM_CURRENT_LINE']
