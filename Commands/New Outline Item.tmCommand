@@ -29,9 +29,23 @@ else:
 
 if index_of_first_dash != -1 and (index_of_first_dash == 0 or old_line[0:index_of_first_dash].isspace() == True) and character_after_first_dash != '-': # Check that there is a dash, if the first character of the line is a dash, and that the character after the dash is not a dash.
 
+    number_of_tabs_preceding_first_dash = 0
+    number_of_spaces_preceding_first_dash = 0
+
+
+    for x in range(0,index_of_first_dash):
+        if old_line[x] == "\t":
+            number_of_tabs_preceding_first_dash = number_of_tabs_preceding_first_dash + 1
+        if old_line[x] == " ":
+            number_of_spaces_preceding_first_dash = number_of_spaces_preceding_first_dash + 1
+            
+
     # To match the indent of the old line. This needs to be altered to be able to match spaces, tabs or a combination
-    for x in range(0,index_of_first_dash): 
+    for x in range(0,number_of_tabs_preceding_first_dash): 
         sys.stdout.write("\t")
+
+    for x in range(0,number_of_spaces_preceding_first_dash): 
+        sys.stdout.write(" ")
 
     sys.stdout.write ("- ")</string>
 	<key>input</key>
