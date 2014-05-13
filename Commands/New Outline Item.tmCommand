@@ -47,7 +47,7 @@ if index_of_first_dash != -1 and (index_of_first_dash == 0 or old_line[0:index_o
 	<key>outputFormat</key>
 	<string>text</string>
 	<key>outputLocation</key>
-	<string>afterInput</string>
+	<string>atCaret</string>
 	<key>scope</key>
 	<string>text.html.markdown</string>
 	<key>uuid</key>
