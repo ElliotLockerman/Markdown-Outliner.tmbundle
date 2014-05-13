@@ -24,7 +24,7 @@
 	<key>keyEquivalent</key>
 	<string>@</string>
 	<key>name</key>
-	<string>Move Item Up</string>
+	<string>Move Outline Item Up</string>
 	<key>scope</key>
 	<string>markup.list.unnumbered.markdown</string>
 	<key>uuid</key>

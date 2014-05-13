@@ -20,7 +20,7 @@
 	<key>keyEquivalent</key>
 	<string>@</string>
 	<key>name</key>
-	<string>Move Item Down</string>
+	<string>Move Outline Item Down</string>
 	<key>scope</key>
 	<string>markup.list.unnumbered.markdown</string>
 	<key>uuid</key>

@@ -12,7 +12,7 @@
 	<key>keyEquivalent</key>
 	<string>	</string>
 	<key>name</key>
-	<string>Indent</string>
+	<string>Indent Outline Item</string>
 	<key>scope</key>
 	<string>markup.list.unnumbered.markdown</string>
 	<key>uuid</key>
