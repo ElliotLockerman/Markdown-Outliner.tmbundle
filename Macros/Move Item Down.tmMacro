@@ -22,7 +22,7 @@
 	<key>name</key>
 	<string>Move Item Down</string>
 	<key>scope</key>
-	<string>text.html.markdown</string>
+	<string>markup.list.unnumbered.markdown</string>
 	<key>uuid</key>
 	<string>EE9D74EA-C020-4993-A5D3-54BF06A54F94</string>
 </dict>

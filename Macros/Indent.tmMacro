@@ -14,7 +14,7 @@
 	<key>name</key>
 	<string>Indent</string>
 	<key>scope</key>
-	<string>text.html.markdown</string>
+	<string>markup.list.unnumbered.markdown</string>
 	<key>uuid</key>
 	<string>C192162D-5EA9-447D-B9CD-05826EECDED2</string>
 </dict>

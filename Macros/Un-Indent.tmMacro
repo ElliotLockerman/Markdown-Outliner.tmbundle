@@ -14,7 +14,7 @@
 	<key>name</key>
 	<string>Un-Indent</string>
 	<key>scope</key>
-	<string>text.html.markdown</string>
+	<string>markup.list.unnumbered.markdown</string>
 	<key>uuid</key>
 	<string>D77FDE57-9A5F-4062-9BFA-7591731212B0</string>
 </dict>

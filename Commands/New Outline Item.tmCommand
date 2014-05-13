@@ -15,25 +15,13 @@ import os
 old_line=os.environ['TM_CURRENT_LINE']
 index_of_first_dash = old_line.find('-')
 
-sys.stdout.write ("\n") # We need a new line no matter what - this is the enter key, after all
+sys.stdout.write ("\n")
 
+# Indent the new line to match the old one
+sys.stdout.write(old_line[0:index_of_first_dash])
 
-# Now we need to figure out if the current line is part of an outline so we know if we need to make the current line and outline. If it is, we do so. 
-
-# We need to get the character after the first dash to see if if theres only one dash (an outline) or multiple (a heading)
-if index_of_first_dash + 1 &lt; len(old_line) and index_of_first_dash != -1:
-    character_after_first_dash = old_line[index_of_first_dash+1]
-else:
-    character_after_first_dash = "" # I assume if there is a single dash and nothing following it, its an outline placeholder and not a one-character long heading. 
-
-
-if index_of_first_dash != -1 and (index_of_first_dash == 0 or old_line[0:index_of_first_dash].isspace() == True) and character_after_first_dash != '-': # Check that there is a dash, if the first character of the line is a dash, and that the character after the dash is not a dash.
-
-    # Indent the new line to match the old one
-    sys.stdout.write(old_line[0:index_of_first_dash])
-    
-    # Print the dash and space that makes it an outline
-    sys.stdout.write("- ")</string>
+# Print the dash and space that makes it an outline
+sys.stdout.write("- ")</string>
 	<key>input</key>
 	<string>line</string>
 	<key>inputFormat</key>
@@ -49,7 +37,7 @@ if index_of_first_dash != -1 and (index_of_first_dash == 0 or old_line[0:index_o
 	<key>outputLocation</key>
 	<string>atCaret</string>
 	<key>scope</key>
-	<string>text.html.markdown</string>
+	<string>markup.list.unnumbered.markdown</string>
 	<key>uuid</key>
 	<string>835C4551-4656-455F-80D7-33076EBF7DFA</string>
 	<key>version</key>

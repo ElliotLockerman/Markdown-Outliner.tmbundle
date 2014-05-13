@@ -7,7 +7,7 @@
 	<key>contactName</key>
 	<string>Elliot Lockerman</string>
 	<key>description</key>
-	<string>New shiny bundle for X.</string>
+	<string>A bundle for easier outline creation and editing in Markdown.</string>
 	<key>name</key>
 	<string>Markdown-Outliner</string>
 	<key>uuid</key>
