@@ -29,7 +29,7 @@ sys.stdout.write("- ")</string>
 	<key>keyEquivalent</key>
 	<string></string>
 	<key>name</key>
-	<string>New Outline Item</string>
+	<string>Add Item to Outline</string>
 	<key>outputCaret</key>
 	<string>afterOutput</string>
 	<key>outputFormat</key>
