@@ -13,6 +13,8 @@ import sys
 import os
 
 old_line=os.environ['TM_CURRENT_LINE']
+cursor_position=int(os.environ['TM_LINE_INDEX'])
+
 index_of_first_dash = old_line.find('-')
 
 sys.stdout.write ("\n")
@@ -21,7 +23,9 @@ sys.stdout.write ("\n")
 sys.stdout.write(old_line[0:index_of_first_dash])
 
 # Print the dash and space that makes it an outline
-sys.stdout.write("- ")</string>
+if cursor_position != 0:
+    sys.stdout.write("- ")
+</string>
 	<key>input</key>
 	<string>line</string>
 	<key>inputFormat</key>
