@@ -4,3 +4,4 @@
 - Move item up/down
 	- Keep cursor in same place when moving items up and down
 	- Introduce ability to move multiple lines
+- Support for multiple characters for outline marking
