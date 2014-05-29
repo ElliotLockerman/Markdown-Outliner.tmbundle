@@ -16,7 +16,7 @@ Double click.
 Note that these are only active when the cursor is currently in an outline item. 
 
 ### Add Item to Outline (⏎/Enter)  
-Create a new outline item on the next line, at the same level. To begin outlining, type a minus followed by a space ("- "). Currently, only minuses are supported as outline-markers. 
+Create a new outline item on the next line, at the same level. To begin outlining, type a minus followed by a space ("- "). To stop outlining, press ⇧⏎/shift enter or enter and backspace over the minus. Currently, only minuses are supported as outline-markers. 
 
 ### Indent Outline Item(⇥/Tab)
 
