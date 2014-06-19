@@ -12,18 +12,18 @@
 import sys
 import os
 
-old_line=os.environ['TM_CURRENT_LINE']
-cursor_position=int(os.environ['TM_LINE_INDEX'])
+original_line = os.environ['TM_CURRENT_LINE']
+caret_column = int(os.environ['TM_LINE_INDEX']) # Have to convert to int, its a str for some reason
 
-index_of_first_dash = old_line.find('-')
+index_of_first_dash = original_line.find('-')
 
 sys.stdout.write ("\n")
 
 # Indent the new line to match the old one
-sys.stdout.write(old_line[0:index_of_first_dash])
+sys.stdout.write(original_line[0:index_of_first_dash])
 
 # Print the dash and space that makes it an outline
-if cursor_position != 0:
+if caret_column != 0:
     sys.stdout.write("- ")
 </string>
 	<key>input</key>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env python
+
+import os
+import sys
+
+document = sys.stdin.read()
+#original_line_text = os.environ['TM_CURRENT_LINE']
+#selected_text = os.environ['TM_SELECTED_TEXT']
+caret_line = int(os.environ['TM_LINE_NUMBER']) - 1 # Have to convert to int, its a str for some reason. Subtract 1 'cauase we're going to split it into a list, and lists are 0 indexed, while line number is 1 indexed.
+caret_column = int(os.environ['TM_LINE_INDEX']) # Have to convert to int, its a str for some reason
+
+document_list_of_lines = str.split(document,'\n')
+
+#Swap the the line with the line above
+line_one_up_temp = document_list_of_lines[caret_line - 1]
+document_list_of_lines[caret_line - 1] = document_list_of_lines[caret_line]
+document_list_of_lines[caret_line] = line_one_up_temp
+
+# Output the results
+sys.stdout.write('\n'.join(document_list_of_lines))</string>
+	<key>input</key>
+	<string>document</string>
+	<key>inputFormat</key>
+	<string>text</string>
+	<key>isDisabled</key>
+	<true/>
+	<key>keyEquivalent</key>
+	<string>@</string>
+	<key>name</key>
+	<string>Move Outline Item Up (command)</string>
+	<key>outputCaret</key>
+	<string>interpolateByChar</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>replaceInput</string>
+	<key>scope</key>
+	<string>markup.list.unnumbered.markdown</string>
+	<key>uuid</key>
+	<string>6835296F-00C4-477D-A11E-3AD6375070FB</string>
+	<key>version</key>
+	<integer>2</integer>
+</dict>
+</plist>
